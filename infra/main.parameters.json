@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "skipVnet": {
+      "value": "${SKIP_VNET}=true"
+    },
+    "environmentName": {
+      "value": "${AZURE_ENV_NAME}"
+    },
+    "location": {
+      "value": "${AZURE_LOCATION}"
+    },
+    "principalId": {
+      "value": "${AZURE_PRINCIPAL_ID}"
+    },
+    "openAiSkuName": {
+      "value": "S0"
+    },
+    "openAiServiceName": {
+      "value": "${AZURE_OPENAI_SERVICE}"
+    },
+    "AISearchName": {
+      "value": "${AZURE_AISEARCH_SERVICE}"
+    },
+    "openAiHost": {
+      "value": "${OPENAI_HOST=azure}"
+    },
+    "chatGptDeploymentName": {
+      "value": "${AZURE_OPENAI_CHATGPT_DEPLOYMENT=chat}"
+    },
+    "chatGptDeploymentCapacity":{
+      "value": "${AZURE_OPENAI_CHATGPT_DEPLOYMENT_CAPACITY}"
+    },
+    "chatGptDeploymentVersion":{
+      "value": "${AZURE_OPENAI_CHATGPT_DEPLOYMENT_VERSION=2024-08-06}"
+    },
+    "chatGptModelName":{
+      "value": "${AZURE_OPENAI_CHATGPT_MODEL=gpt-4o}"
+    },
+    "storageAccountName": {
+      "value": "${AZURE_STORAGE_ACCOUNT}"
+    },
+    "storageResourceGroupName": {
+      "value": "${AZURE_STORAGE_RESOURCE_GROUP}"
+    },
+    "azFunctionHostingPlanType": {
+      "value": "flexconsumption"
+    }
+  }
+}
